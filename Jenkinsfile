@@ -7,7 +7,14 @@
 
 // Declarative pipeline (new syntax)
 pipeline {
-	agent { docker { image 'maven:3.6.3'} }
+	agent { 
+ 		docker {
+        	image 'maven:3-alpine'
+        	label 'my-defined-label'
+        	args  '-v /tmp:/tmp'
+		}
+	}
+		
 	stages {
 		stage('Build') {
 			steps {
