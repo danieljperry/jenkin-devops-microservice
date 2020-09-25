@@ -9,7 +9,7 @@
 pipeline {
 	agent { 
  		docker {
-			 image 'node:14.11'
+			 image 'node:current'
 		 }
 	}
 		
