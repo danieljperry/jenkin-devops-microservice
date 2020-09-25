@@ -8,7 +8,9 @@
 // Declarative pipeline (new syntax)
 pipeline {
 	agent { 
- 		dockerfile true
+ 		docker {
+			 image 'maven:3.6.3'
+		 }
 	}
 		
 	stages {
