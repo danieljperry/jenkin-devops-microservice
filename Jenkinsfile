@@ -7,9 +7,12 @@
 
 // Declarative pipeline (new syntax)
 pipeline {
+    agent any
+
 	agent { 
  		docker {
-			 image 'node:current'
+			 //image 'node:current'
+			 image 'maven:3.6.3'
 		 }
 	}
 		
