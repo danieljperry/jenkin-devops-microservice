@@ -7,7 +7,7 @@
 
 // Declarative pipeline (new syntax)
 pipeline {
-    agent any
+    //agent any
 
 	agent { 
  		docker {
